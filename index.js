@@ -39,9 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Funciones
 
-    /**
-    * Dibuja todos los productos a partir de la base de datos. No confundir con el carrito
-    */
+  
     function renderizarProductos() {
         baseDeDatos.forEach((info) => {
             // Estructura
@@ -90,9 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
         guardarCarritoEnLocalStorage();
     }
 
-    /**
-    * Dibuja todos los productos guardados en el carrito
-    */
+   
     function renderizarCarrito() {
         // Vaciamos todo el html
         DOMcarrito.textContent = '';
@@ -161,9 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 0).toFixed(2);
     }
 
-    /**
-    * Varia el carrito y vuelve a dibujarlo
-    */
+  
     function vaciarCarrito() {
         // Limpiamos los productos guardados
         carrito = [];
